@@ -28,7 +28,7 @@ if ((adopted.toLowerCase() === 'y') ||  (adopted.toLowerCase() === 'yes')) {
 else if ((adopted.toLowerCase() === 'n') || (adopted.toLowerCase() === 'no')) {
     alert('It\'s okay, ' + name + ', all good things must come to an end - even your winning streak!');
 }
-else 
+else
     alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
 console.log('I am adopted. ' + name + ' answered \"' + adopted + '\" to this question.');
 
@@ -40,7 +40,7 @@ if ((married.toLowerCase() === 'y') ||  (married.toLowerCase() === 'yes')) {
 else if ((married.toLowerCase() === 'n') || (married.toLowerCase() === 'no')) {
     alert('Unfortunately, ' + name + ', you missed this one... but keep going, no one\'s perfect! ;)');
 }
-else 
+else
     alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
 console.log('I am married. ' + name + ' answered \"' + married + '\" to this question.');
 
@@ -52,7 +52,7 @@ if ((pets.toLowerCase() === 'y') || (pets.toLowerCase() === 'yes')) {
 else if ((pets.toLowerCase() === 'n') || (pets.toLowerCase() === 'no')) {
     alert('Your powers of prediction are uncanny, ' + name + '!');
 }
-else 
+else
     alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
 console.log('I do not have any pets.' + name + ' answered \"' + pets + '\" to this question.');
 
@@ -64,7 +64,7 @@ if ((iceCream.toLowerCase() === 'y') || (iceCream.toLowerCase() === 'yes')) {
 else if ((iceCream.toLowerCase() === 'n') || (iceCream.toLowerCase() === 'no')) {
     alert('You were doing so well, ' + name + '... well, maybe next question you\'ll get back on track?');
 }
-else 
+else
     alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
 console.log('I do like ice cream.' + name + ' answered \"' + iceCream + '\" to this question.');
 
@@ -76,6 +76,6 @@ if ((internationalTravels.toLowerCase() === 'y') || (internationalTravels.toLowe
 else if ((internationalTravels.toLowerCase() === 'n') || (internationalTravels.toLowerCase() === 'no')) {
     alert ('Keep your day job, ' + name + '. You\'ve got no future as a psychic.');
 }
-else 
+else
     alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
 console.log('I have been outside of the United States. ' + name + ' answered ' + internationalTravels + ' to this question.');
