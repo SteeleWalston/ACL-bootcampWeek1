@@ -2,7 +2,7 @@
 let attemptsCorrect = 0;
 //Capture their name
 
-// let name = null 
+// let name = null
 
 function userName() {
     const name = prompt ('Hi! What\'s your name?');
@@ -108,7 +108,7 @@ function knee() {
         else if (dislocatedKnee > 25) {
             alert('Too high - try again! You have used ' + (i + 1) + ' out of 4 attempts.');
             dislocatedKnee = parseInt(prompt('Ok, ' + name + ', let\'s try this again: approximately how many times have I dislocated my right knee?'));
-    
+
         }
         else if (dislocatedKnee === 25) {
             alert('Way to go, ' + name + ' , you got it! I have dislocated my right knee approximately 25 times! Ouch!');
@@ -133,7 +133,7 @@ function states() {
         }
         else if (statesLived.indexOf(guess) === -1) {
             alert('Nice try, ' + name + ', but no cigar... try again! You have used ' + counter + ' out of six attempts.');
-    
+
         }
         else if (counter === 5) {
             alert('Sorry, ' + name + ' , you\'ve used up all your tries - I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia.');
@@ -142,13 +142,13 @@ function states() {
     }
 }
 
-// adopt();
-// marry();
-// pet();
-// ice();
-// travels();
-// knee();
-// states();
+adopt();
+marry();
+pet();
+ice();
+travels();
+knee();
+states();
 
 
 //Tally of total guesses correct
