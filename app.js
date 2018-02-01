@@ -1,81 +1,113 @@
 'use strict';
-
-// Get their name
-const name = prompt('What is your name?');
-alert('Hey there, ' + name + ', it\'s nice to meet you! Here are some questions about me:');
-console.log ('Their name is ' + name + '.');
-
-//How many states?
-const statesVisited = prompt('How many U.S. states have I visited?');
-alert('Correct, ' + name + '! I have visited ' + statesVisited + ' U.S. states!');
-console.log ('I have been to 48 states. ' + name + ' answered ' + statesVisited + ' to this question.');
-
-//How many siblings?
-const numOfSiblings = prompt('How many siblings do I have?');
-alert('You got it, ' + name + '! In addition to visiting ' + statesVisited + ', I also have ' + numOfSiblings + ' sibling(s)!');
-console.log ('I have 2 siblings. ' + name + ' answered ' + numOfSiblings + ' to this question.');
-
-//What former job?
-const formerJob = prompt('What full-time occupation did I have before beginning at Alchemy Code Lab?');
-alert('Nailed it, ' + name + '! In addition to visiting ' + statesVisited + ' states, and having ' + numOfSiblings + ' siblings, I worked full-time as a ' + formerJob + ' before starting at Alchemy Code Lab! Do you have a crystal ball or something? :)');
-console.log ('I worked full-time as a truck driver before starting at Alchemy Code Lab.' + name + ' answered' + formerJob + ' to this question.');
+let attemptsCorrect = 0;
+//Capture their name
+const name = prompt ('Hi! What\'s your name?');
+console.log('The player\'s name is ' + name + '.');
 
 //Adopted? Y/N
-const adopted = prompt('Am I adopted? Please answer \"yes\" or \"no\":');
-if ((adopted.toLowerCase() === 'y') ||  (adopted.toLowerCase() === 'yes')) {
+const adopted = prompt('Am I adopted? Please answer \"yes\" or \"no\":').toLowerCase();
+if ((adopted === 'y') ||  (adopted === 'yes')) {
+    attemptsCorrect++;
     alert('Way to go, ' + name + '!');
 }
-else if ((adopted.toLowerCase() === 'n') || (adopted.toLowerCase() === 'no')) {
-    alert('It\'s okay, ' + name + ', all good things must come to an end - even your winning streak!');
+else if ((adopted === 'n') || (adopted === 'no')) {
+    alert('It\'s okay, ' + name + ', everyone\'s entitled to an occasional mistake!');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I am adopted. ' + name + ' answered \"' + adopted + '\" to this question.');
 
 //Married? Y/N
-const married = prompt('Am I married? Please answer \"yes\" or \"no\":');
-if ((married.toLowerCase() === 'y') ||  (married.toLowerCase() === 'yes')) {
-    alert('You\'re on a roll!');
+const married = prompt('Am I married? Please answer \"yes\" or \"no\":').toLowerCase();
+if ((married === 'y') ||  (married === 'yes')) {
+    attemptsCorrect++;
+    alert('You\'re on a roll! I am happily married, ' + name + '!');
 }
-else if ((married.toLowerCase() === 'n') || (married.toLowerCase() === 'no')) {
+else if ((married === 'n') || (married === 'no')) {
     alert('Unfortunately, ' + name + ', you missed this one... but keep going, no one\'s perfect! ;)');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I am married. ' + name + ' answered \"' + married + '\" to this question.');
 
 //Pets? Y/N
-const pets = prompt('Do I have any pets? Please answer \"yes\" or \"no\":');
-if ((pets.toLowerCase() === 'y') || (pets.toLowerCase() === 'yes')) {
-    alert('Alas, ' + name + ' ,your luck seems to have run out.');
+const pets = prompt('Do I have any pets? Please answer \"yes\" or \"no\":').toLowerCase();
+if ((pets === 'y') || (pets === 'yes')) {
+    alert('Missed this one, ' + name + ' - but don\'t give up!');
 }
-else if ((pets.toLowerCase() === 'n') || (pets.toLowerCase() === 'no')) {
+else if ((pets === 'n') || (pets === 'no')) {
+    attemptsCorrect++;
     alert('Your powers of prediction are uncanny, ' + name + '!');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I do not have any pets.' + name + ' answered \"' + pets + '\" to this question.');
 
 //Ice Cream? Y/N
-const iceCream = prompt('Do I like ice cream? Please answer \"yes\" or \"no\":');
-if ((iceCream.toLowerCase() === 'y') || (iceCream.toLowerCase() === 'yes')) {
+const iceCream = prompt('Do I like ice cream? Please answer \"yes\" or \"no\":').toLowerCase();
+if ((iceCream === 'y') || (iceCream === 'yes')) {
+    attemptsCorrect++;
     alert('Of course, ' + name + '. I mean, who DOESN\'T like ice cream, right? :)');
 }
-else if ((iceCream.toLowerCase() === 'n') || (iceCream.toLowerCase() === 'no')) {
+else if ((iceCream === 'n') || (iceCream === 'no')) {
     alert('You were doing so well, ' + name + '... well, maybe next question you\'ll get back on track?');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I do like ice cream.' + name + ' answered \"' + iceCream + '\" to this question.');
 
 //Traveled? Y/N
-const internationalTravels = prompt('Have I ever been to any countries outside of the United States? Please answer \"yes\" or \"no\":');
-if ((internationalTravels.toLowerCase() === 'y') || (internationalTravels.toLowerCase() === 'yes')) {
+const internationalTravels = prompt('Have I ever been to any countries outside of the United States? Please answer \"yes\" or \"no\":').toLowerCase();
+if ((internationalTravels === 'y') || (internationalTravels === 'yes')) {
+    attemptsCorrect++;
     alert ('Okay now, Professor X... maybe you should be playing the lottery instead of doing this?');
 }
-else if ((internationalTravels.toLowerCase() === 'n') || (internationalTravels.toLowerCase() === 'no')) {
+else if ((internationalTravels === 'n') || (internationalTravels === 'no')) {
     alert ('Keep your day job, ' + name + '. You\'ve got no future as a psychic.');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I have been outside of the United States. ' + name + ' answered ' + internationalTravels + ' to this question.');
+
+//Number of Times Knee Dislocated?
+let dislocatedKnee = parseInt(prompt('Alright, ' + name + ', now for a tougher question: approximately how many times have I dislocated my right knee?'));
+let count = 0;
+for (let i = 0; i < 4; i++) {
+    count++;
+    if (dislocatedKnee < 25) {
+        alert('Too low - try again! You have used ' + (i + 1) + ' out of 4 attempts.');
+        dislocatedKnee = parseInt(prompt('Ok, ' + name + ', let\'s try this again: approximately how many times have I dislocated my right knee?'));
+    }
+    else if (dislocatedKnee > 25) {
+        alert('Too high - try again! You have used ' + (i + 1) + ' out of 4 attempts.');
+        dislocatedKnee = parseInt(prompt('Ok, ' + name + ', let\'s try this again: approximately how many times have I dislocated my right knee?'));
+
+    }
+    else if (dislocatedKnee === 25) {
+        alert('Way to go, ' + name + ' , you got it! I have dislocated my right knee approximately 25 times! Ouch!');
+        attemptsCorrect++;
+        break;
+    }
+}
+console.log('I have dislocated my right knee approximately 25 times. ' + name + ' used ' + (count) + ' guesses on this question');
+
+//States I have lived in?
+const statesLived = ['texas', 'wisconsin', 'tennessee', 'ohio', 'alabama', 'missouri', 'georgia'];
+for (let counter = 0; counter < 6; counter++) {
+    const guess = prompt('Okay, ' + name + ', time for another guess: What other states have I lived in, other than Oregon? You get six attempts to guess one!').toLowerCase();
+    if (statesLived.includes(guess)) {
+        attemptsCorrect++;
+        alert('Awesome, ' + name + ', you guessed correctly! I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia. Way to go!');
+        break;
+    }
+    else if (statesLived.indexOf(guess) === -1) {
+        alert('Nice try, ' + name + ', but no cigar... try again! You have used ' + counter + ' out of six attempts.');
+
+    }
+    else if (counter === 5) {
+        alert('Sorry, ' + name + ' , you\'ve used up all your tries - I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia.');
+        break;
+    }
+}
+//Tally of total guesses correct
+alert('You got ' + attemptsCorrect + ' questions correct, ' + name + '. Better luck next time!');

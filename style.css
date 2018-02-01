@@ -1,11 +1,23 @@
 body {
-    background-color:grey;
+    background-color:lightgrey;
+    text-align: center;
+
 }
 
 header {
     color: green;
 }
 
-p {
-    color: blue;
+ul {
+    color: darkblue;
+    padding: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+.musical_artists {
+    color: darkblue;
+    text-align: center;
+    padding: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
 }
