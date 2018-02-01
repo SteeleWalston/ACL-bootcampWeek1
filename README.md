@@ -6,4 +6,6 @@
 ## Getting Started
 <!-- Learn the fundamentals of JS, HTML, and CSS as practiced in early 2018 and how to make them all work together.-->
 
+# Pair Programming 
 
+<!-- Day 4:  Steele was driving amd Ryan was navigating wrapping previous days questions in functions-->
