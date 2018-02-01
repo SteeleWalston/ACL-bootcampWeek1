@@ -14,7 +14,7 @@ else if ((adopted === 'n') || (adopted === 'no')) {
     alert('It\'s okay, ' + name + ', everyone\'s entitled to an occasional mistake!');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I am adopted. ' + name + ' answered \"' + adopted + '\" to this question.');
 
 //Married? Y/N
@@ -27,7 +27,7 @@ else if ((married === 'n') || (married === 'no')) {
     alert('Unfortunately, ' + name + ', you missed this one... but keep going, no one\'s perfect! ;)');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I am married. ' + name + ' answered \"' + married + '\" to this question.');
 
 //Pets? Y/N
@@ -40,7 +40,7 @@ else if ((pets === 'n') || (pets === 'no')) {
     alert('Your powers of prediction are uncanny, ' + name + '!');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I do not have any pets.' + name + ' answered \"' + pets + '\" to this question.');
 
 //Ice Cream? Y/N
@@ -53,7 +53,7 @@ else if ((iceCream === 'n') || (iceCream === 'no')) {
     alert('You were doing so well, ' + name + '... well, maybe next question you\'ll get back on track?');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I do like ice cream.' + name + ' answered \"' + iceCream + '\" to this question.');
 
 //Traveled? Y/N
@@ -66,7 +66,7 @@ else if ((internationalTravels === 'n') || (internationalTravels === 'no')) {
     alert ('Keep your day job, ' + name + '. You\'ve got no future as a psychic.');
 }
 else
-    alert('You did not answer \"yes\" or \"no", " + name + "! Okay, next question!');
+    alert('You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!');
 console.log('I have been outside of the United States. ' + name + ' answered ' + internationalTravels + ' to this question.');
 
 //Number of Times Knee Dislocated?
