@@ -1,5 +1,7 @@
 body {
-    background-color:grey;
+    background-color:lightgrey;
+    text-align: center;
+
 }
 
 header {
@@ -7,5 +9,9 @@ header {
 }
 
 p {
-    color: blue;
+    color: darkblue;
+}
+.musical_artists {
+    color: darkblue;
+    text-align: center;
 }
