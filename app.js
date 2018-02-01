@@ -92,9 +92,9 @@ for (let i = 0; i < 4; i++) {
 console.log('I have dislocated my right knee approximately 25 times. ' + name + ' used ' + (count) + ' guesses on this question');
 
 //States I have lived in?
-const statesLived = ['Texas', 'Wisconsin', 'Tennessee', 'Ohio', 'Alabama', 'Missouri', 'Georgia'];
+const statesLived = ['texas', 'wisconsin', 'tennessee', 'ohio', 'alabama', 'missouri', 'georgia'];
 for (let counter = 0; counter < 6; counter++) {
-    const guess = prompt('Okay, ' + name + ', time for another guess: What other states have I lived in, other than Oregon? You get six attempts to guess one!');
+    const guess = prompt('Okay, ' + name + ', time for another guess: What other states have I lived in, other than Oregon? You get six attempts to guess one!').toLowerCase();
     if (statesLived.includes(guess)) {
         attemptsCorrect++;
         alert('Awesome, ' + name + ', you guessed correctly! I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia. Way to go!');
@@ -109,4 +109,5 @@ for (let counter = 0; counter < 6; counter++) {
         break;
     }
 }
+//Tally of total guesses correct
 alert('You got ' + attemptsCorrect + ' questions correct, ' + name + '. Better luck next time!');
