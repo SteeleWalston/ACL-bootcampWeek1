@@ -17,7 +17,13 @@ let counter;
 
 //Adopted? Y/N
 
-const questionsArray = ['Am I adopted? Please answer \"yes\" or \"no\":', 'Am I married? Please answer \"yes\" or \"no\":', 'Do I have any pets? Please answer \"yes\" or \"no\":', 'Do I like ice cream? Please answer \"yes\" or \"no\":', 'Have I ever been to any countries outside of the United States? Please answer \"yes\" or \"no\":', 'Alright, ' + name + ', now for a tougher question: approximately how many times have I dislocated my right knee?', 'Okay, ' + name + ', time for another guess: What other states have I lived in, other than Oregon? You get six attempts to guess one!'];
+const questionsArray = [
+    'Am I adopted? Please answer \"yes\" or \"no\":', 
+    'Am I married? Please answer \"yes\" or \"no\":', 'Do I have any pets? Please answer \"yes\" or \"no\":', 
+    'Do I like ice cream? Please answer \"yes\" or \"no\":', 
+    'Have I ever been to any countries outside of the United States? Please answer \"yes\" or \"no\":', 
+    'Alright, ' + name + ', now for a tougher question: approximately how many times have I dislocated my right knee?', 
+    'Okay, ' + name + ', time for another guess: What other states have I lived in, other than Oregon? You get six attempts to guess one!'];
 
 const correctAnswers = [
     'yes',
@@ -25,7 +31,13 @@ const correctAnswers = [
     'n', 
     'no', 
     25, 
-    'texas', 'wisconsin', 'tennessee', 'ohio', 'alabama', 'missouri', 'georgia'
+    'texas', 
+    'wisconsin', 
+    'tennessee', 
+    'ohio', 
+    'alabama', 
+    'missouri', 
+    'georgia'
 ];
 
 const yesNoResponses = [
@@ -33,10 +45,18 @@ const yesNoResponses = [
     'It\'s okay, ' + name + ', everyone\'s entitled to an occasional mistake!', 
     'You did not answer \"yes\" or \"no", ' + name + '! Okay, next question!', 
     'You\'re on a roll! I am happily married, ' + name + '!', 
-    'Unfortunately, ' + name + ', you missed this one... but keep going, no one\'s perfect! ;)', 'Missed this one, ' + name + ' - but don\'t give up!', 'Your powers of prediction are uncanny, ' + name + '!', 'Of course, ' + name + '. I mean, who DOESN\'T like ice cream, right? :)', 'You were doing so well, ' + name + '... well, maybe next question you\'ll get back on track?', 'Okay now, Professor X... maybe you should be playing the lottery instead of doing this?', 'Keep your day job, ' + name + '. You\'ve got no future as a psychic.', 
+    'Unfortunately, ' + name + ', you missed this one... but keep going, no one\'s perfect! ;)', 
+    'Missed this one, ' + name + ' - but don\'t give up!', 'Your powers of prediction are uncanny, ' + name + '!', 
+    'Of course, ' + name + '. I mean, who DOESN\'T like ice cream, right? :)', 
+    'You were doing so well, ' + name + '... well, maybe next question you\'ll get back on track?', 
+    'Okay now, Professor X... maybe you should be playing the lottery instead of doing this?', 
+    'Keep your day job, ' + name + '. You\'ve got no future as a psychic.', 
     function (x) {return 'Too low - try again! You have used ' + (x + 1) + ' out of 4 attempts.';}, 
     function (i) {return 'Too high - try again! You have used ' + (i + 1) + ' out of 4 attempts.';}, 
-    'Way to go, ' + name + ' , you got it! I have dislocated my right knee approximately 25 times! Ouch!', 'Awesome, ' + name + ', you guessed correctly! I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia. Way to go!', 'Nice try, ' + name + ', but no cigar... try again! You have used ' + counter + ' out of six attempts.', 'Sorry, ' + name + ' , you\'ve used up all your tries - I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia.'];
+    'Way to go, ' + name + ' , you got it! I have dislocated my right knee approximately 25 times! Ouch!', 
+    'Awesome, ' + name + ', you guessed correctly! I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia. Way to go!', 
+    'Nice try, ' + name + ', but no cigar... try again! You have used ' + counter + ' out of six attempts.', 
+    'Sorry, ' + name + ' , you\'ve used up all your tries - I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia.'];
 
 function adopt() {
 
