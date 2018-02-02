@@ -23,7 +23,8 @@ const questionsArray = [
     'Do I like ice cream? Please answer \"yes\" or \"no\":', 
     'Have I ever been to any countries outside of the United States? Please answer \"yes\" or \"no\":', 
     'Alright, ' + name + ', now for a tougher question: approximately how many times have I dislocated my right knee?', 
-    'Okay, ' + name + ', time for another guess: What other states have I lived in, other than Oregon? You get six attempts to guess one!'];
+    'Okay, ' + name + ', time for another guess: What other states have I lived in, other than Oregon? You get six attempts to guess one!'
+];
 
 const correctAnswers = [
     'yes',
@@ -51,12 +52,19 @@ const yesNoResponses = [
     'You were doing so well, ' + name + '... well, maybe next question you\'ll get back on track?', 
     'Okay now, Professor X... maybe you should be playing the lottery instead of doing this?', 
     'Keep your day job, ' + name + '. You\'ve got no future as a psychic.', 
-    function (x) {return 'Too low - try again! You have used ' + (x + 1) + ' out of 4 attempts.';}, 
-    function (i) {return 'Too high - try again! You have used ' + (i + 1) + ' out of 4 attempts.';}, 
+    function (numAttempts) {
+        return 'Too low - try again! You have used ' + (numAttempts + 1) + ' out of 4 attempts.';
+    }, 
+    function (whatklsdklfjsdjklf) {
+        return 'Too high - try again! You have used ' + (whatklsdklfjsdjklf + 1) + ' out of 4 attempts.';
+    }, 
     'Way to go, ' + name + ' , you got it! I have dislocated my right knee approximately 25 times! Ouch!', 
     'Awesome, ' + name + ', you guessed correctly! I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia. Way to go!', 
     'Nice try, ' + name + ', but no cigar... try again! You have used ' + counter + ' out of six attempts.', 
-    'Sorry, ' + name + ' , you\'ve used up all your tries - I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia.'];
+    'Sorry, ' + name + ' , you\'ve used up all your tries - I have lived in Texas, Wisconsin, Tennessee, Ohio, Alabama, Missouri, and Georgia.'
+];
+
+// yesNoResponses[9]()
 
 function adopt() {
 
@@ -141,14 +149,18 @@ function travels() {
 //Number of Times Knee Dislocated?
 
 function knee() {
-    let dislocatedKnee = parseInt(prompt(questionsArray[5]));
+    let dislocatedKnee = parseInt(prompt(questionsArray[5])); // 13
     let count = 0;
     for (let i = 0; i < 4; i++) {
         count++;
         if (dislocatedKnee < correctAnswers[4]) {
-            const response1 = yesNoResponses[12]; 
-            const message1 = response1(x);
-            alert(message1);
+            const response = yesNoResponses[11];
+            console.log(response);
+
+            // numAttempts
+            const message = response(i);
+            alert(message);
+
             dislocatedKnee = parseInt(prompt('Ok, ' + name + ', let\'s try this again: approximately how many times have I dislocated my right knee?'));
         }
         else if (dislocatedKnee > correctAnswers[4]) {
@@ -156,7 +168,6 @@ function knee() {
             const message = response(i);
             alert(message);
             dislocatedKnee = parseInt(prompt('Ok, ' + name + ', let\'s try this again: approximately how many times have I dislocated my right knee?'));
-
         }
         else if (dislocatedKnee === correctAnswers[4]) {
             alert(yesNoResponses[13]);
